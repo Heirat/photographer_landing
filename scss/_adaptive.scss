@@ -1,0 +1,40 @@
+@media screen and (max-width: 1400px) {}
+
+@media screen and (max-width: 1200px) {}
+
+@media screen and (max-width: 992px) {
+  .button-outline {
+    padding: 0 !important;
+    border: none;
+  }
+}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 576px) {
+  .faq__header {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .step-wrapper:not(:last-child) {
+    margin-right: unset;
+  }
+
+  .step {
+    width: 250px;
+    height: 250px;
+  }
+
+  .step__num {
+    width: 30px;
+    height: 50px;
+  }
+
+  .step__text {
+    margin-top: 30px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+  }
+}

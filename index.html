@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сайт для Вики</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <!-- JQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+    crossorigin="anonymous"></script>
+  <!-- Fotorama from CDNJS, 19 KB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+  <link rel="stylesheet" href="/css/main.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+  <!-- 
+        xs  x-small            < 576
+        sm  small              >= 576
+        md  medium             >= 768
+        lg  large              >= 992
+        xl  extra-large        >= 1200
+        xxl extra-extra-large >= 1400
+    -->
+  <header class="header-outer">
+    <div class="container">
+      <div class="row header-inner">
+        <div class="col d-flex align-items-center justify-content-between">
+          <div class="logo">
+            <span class="name fw-medium">Виктория Морева</span>
+          </div>
+          <nav class="ms-auto d-flex align-items-center
+              justify-content-end d-none d-md-block">
+            <ul class="nav d-flex align-items-center">
+              <li class="nav__item"><a href="#about" class="link">Обо мне</a>
+              </li>
+              <li class="nav__item"><a href="#portfolio" class="link">Портфолио</a></li>
+              <li class="nav__item"><a href="#instagram" class="link">Инстаграм</a></li>
+              <li class="nav__item">
+                <a href="#form" class="button button-outline">Заказать
+                  фотосессию</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="hamburger-menu d-md-none">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+            <ul class="menu__box">
+              <li><a class="menu__item link" href="#about">Обо мне</a></li>
+              <li><a class="menu__item" href="#portfolio">Портфолио</a></li>
+              <li><a class="menu__item" href="#instagram">Инстаграм</a></li>
+              <li>
+                <div class="menu__hr"></div>
+              </li>
+              <li><a class="menu__item" href="#form">Заказать фотосессию</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="gradient_1">
+      <div class="gradient_2">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9 offer-cont">
+              <h1 class="offer-cont__title">Фотограф Виктория Морева</h1>
+              <p class="offer-cont__text">Женский портрет, как искусство</p>
+              <a href="#" class="button button-primary">Заказать фотосессию</a>
+            </div>
+          </div>
+
+        </div>
+        <img src="img/waves/wave-1.png" alt="" class="wave
+            wave_bottom-inside">
+      </div>
+
+    </div>
+
+  </main>
+
+  <section class="about">
+    <a name="about" class="anchor-link"></a>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <a name="about"></a>
+          <div class="hero d-none d-sm-block">
+            <img src="img/about/flower.svg" alt="" class="hero-flower d-none
+                d-lg-block">
+            <div class="hero-1 d-none d-sm-block">
+              <img src="img/about/hero-1.jpg" alt="Виктория Морева" class="hero-1__img">
+              <img src="img/about/back-spot.svg" alt="" class="hero-1__spot
+                  d-none d-lg-block">
+            </div>
+            <div class="hero-2 d-none d-lg-block">
+              <img src="img/about/hero-2__spot-left.svg" alt="" class="hero-2__spot-left">
+              <img src="img/about/hero-2.jpg" alt="" class="hero-2__img">
+              <img src="img/about/hero-2__spot-right.svg" alt="" class="hero-2__spot-right">
+            </div>
+
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <h2 class="about__heading text-center text-sm-start">Обо мне</h2>
+          <div class="hero-1 d-sm-none">
+            <img src="img/about/hero-1.jpg" alt="Виктория Морева" class="hero-1__img">
+          </div>
+
+          <p class="about__text">Привет! Меня зовут Виктория, я фотограф
+            с опытом работы более 2 лет. Я обожаю снимать в жанре женский
+            портрет. И приглашаю тебя на классную фотосессию. Мы вместе
+            выберем образ, аксессуары, место, я помогу в позировании,
+            повеселимся в процессе, а через пару дней будут готовы фото,
+            которые не оставят тебя равнодушной!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- убрать отступы и доделать-->
+  <section class="portfolio">
+    <img src="img/waves/wave-2.png" alt="" class="wave wave_top">
+    <div class="bg-wrap">
+      <div class="container">
+        <div class="row">
+          <div class="col offset-1">
+            <a name="portfolio" class="anchor-link"></a>
+            <h2 class="portfolio__header">Портфолио</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="fotorama portfolio__slider" data-nav="thumbs" data-allowfullscreen="true" data-loop="true"
+              shadows="false">
+              <img href="img/1.jpg" alt="" width="64">
+              <img href="img/2.jpg" alt="">
+              <img src="img/3.jpg" alt="">
+              <img src="img/4.jpg" alt="" width="36" height="64">
+              <img src="img/5.jpg" alt="">
+              <img src="img/6.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="img/waves/wave-3.png" alt="" class="wave wave_bottom">
+  </section>
+
+
+  <section class="faq">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 d-none d-md-block">
+          <img src="img/faq-hero-compressed.jpg" alt="FAQ">
+        </div>
+        <div class="col-md-6">
+          <h2 class="faq__header">Частые вопросы</h2>
+          <ul class="faq-questions">
+            <li class="faq-questions-item opened">
+              <div class="faq-question d-flex align-items-center">
+                <div class="faq-question__icn"></div>
+                <h4 class="faq-question__heading">Какова стоимость съемки?</h4>
+              </div>
+              <p class="faq-answer">
+                1 час = 3500р. <br>
+                2 часа = 5000р. <br>
+                Последующие часы
+                + 2000р.
+              </p>
+            </li>
+            <li class="faq-questions-item">
+              <div class="faq-question d-flex align-items-center">
+                <div class="faq-question__icn"></div>
+                <h4 class="faq-question__heading">Как долго ждать фото?</h4>
+              </div>
+              <p class="faq-answer">
+                Лучшие кадры в цветокоррекции - 5 дней. <br>
+                Десять фото в ретуши - 7 дней.
+              </p>
+            </li>
+            <li class="faq-questions-item">
+              <div class="faq-question d-flex align-items-center
+                  justify-content-start">
+                <div class="faq-question__icn"></div>
+                <h4 class="faq-question__heading">Что делать, если я не умею
+                  позировать?</h4>
+              </div>
+              <p class="faq-answer">
+                Я подскажу Вам позы, в которых вы сможете почувствовать себя
+                уверенно и раслабленно.
+              </p>
+            </li>
+            <li class="faq-questions-item">
+              <div class="faq-question d-flex align-items-center">
+                <div class="faq-question__icn"></div>
+                <h4 class="faq-question__heading">Как выбрать локацию?</h4>
+              </div>
+              <p class="faq-answer">
+                Локация напрямую зависит от идеи съёмки. Мы вместе с Вами
+                придумаем идею и я подскажу какая локация больше подойдёт.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="advantages">
+    <img src="img/waves/wave-4.png" alt="" class="wave wave_top">
+    <div class="bg-wrap">
+      <div class="container">
+        <div class="row">
+          <h2 class="advantages__heading">Преимущества работы со мной</h2>
+        </div>
+      </div>
+    </div>
+    <img src="img/waves/wave-5.png" alt="" class="wave wave_bottom">
+  </section>
+
+  <section class="steps">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2 class="steps__heading">Этапы работы</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="steps-wrapper flex-column flex-sm-row">
+          <div class="step-wrapper">
+            <div class="step" id="step_1">
+              <img src="img/steps/digit_1.svg" alt="1" class="step__num">
+              <p class="step__text">Создание идеи съемки и Вашего образа</p>
+            </div>
+          </div>
+          <div class="step-wrapper">
+            <div class="step" id="step_2">
+              <img src="img/steps/digit_2.svg" alt="2" class="step__num">
+              <p class="step__text">Консультация по подбору одежды, аксессураов и реквизита</p>
+            </div>
+          </div>
+          <div class="step-wrapper">
+            <img src="img/steps/flower.svg" alt="" class="step__flower">
+            <div class="step" id="step_3">
+              <img src="img/steps/digit_3.svg" alt="3" class="step__num">
+              <p class="step__text">Помощь в позировании и съемка в веселой и непренужденной атмосфере</p>
+            </div>
+          </div>
+          <div class="step-wrapper">
+            <div class="step" id="step_4">
+              <img src="img/steps/digit_4.svg" alt="4" class="step__num">
+              <p class="step__text">Обработка и ретушь наилучших кадров</p>
+            </div>
+          </div>
+          <div class="step-wrapper">
+            <div class="step" id="step_5">
+              <img src="img/steps/digit_5.svg" alt="5" class="step__num">
+              <p class="step__text">Получение Ваших прекрасных фотографий на почту или Яндекс диск</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!--
+  <section class="contact-form ps-3 ps-md-0 pe-3 pe-md-0">
+    <a name="form" class="anchor-link"></a>
+    <div class="container-md">
+      <div class="row">
+        <div class="col-12 col-lg-10 offset-lg-1 form-wrap">
+          <div class="d-flex justify-content-center flex-column
+              align-items-center">
+            <h2>Закажите
+              фотосессию</h2>
+            <form class="g-form" id="g-form-1" method="POST" action="" autocomplete="off">
+
+              
+  <h2 class="g-form__title g-form__title_respond"></h2>
+  <div class="g-form__preloader"></div>
+
+  <div class="g-form__inputs">
+    <div class="contact-form__inputs d-flex
+                    flex-column align-items-center">
+      <fieldset class="g-form__input-wrapper
+                      contact-form__input-wrapper">
+        <input class="g-form__input g-form__input_name
+                        contact-form__input" id="name" name="Имя" placeholder="Введите ваше имя" required>
+      </fieldset>
+
+      <fieldset class="g-form__input-wrapper
+                      contact-form__input-wrapper">
+        <input class="g-form__input g-form__input_tel
+                        contact-form__input" id="tel" name="Телефон" placeholder="Введите ваш телефон">
+      </fieldset>
+
+      <fieldset class="g-form__input-wrapper
+                      contact-form__input-wrapper">
+        <input id="email" class="contact-form__input" name="Email" type="email" value="" required
+          placeholder="Введите ваш email" />
+      </fieldset>
+
+      <fieldset class="g-form__input-wrapper
+                      g-form__input-wrapper_hidden d-none">
+        <label for="honeypot">Помогает бороться со спамом.
+          Должно
+          быть пустым!</label>
+        <input id="honeypot" type="text" name="honeypot" value="">
+      </fieldset>
+    </div>
+
+    <div class="contact-form__text">
+      Я свяжусь с Вами и мы вместе обсудим идею фотосессии.
+    </div>
+
+    <div class="g-form__button-wrapper d-flex
+                    justify-content-center">
+      <button class="g-form__button button button-primary">Оставить
+        заявку</button>
+    </div>
+  </div>
+  </form>
+  </div>
+  </div>
+  </div>
+  <div class="row">
+    <div class="col-md-10 offset-1">
+      <div class="d-flex justify-content-center">
+
+      </div>
+    </div>
+  </div>
+  </div>
+  </section>
+  -->
+  <!-- Bootstrap 5 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+  </script>
+  <!-- Wow.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+    integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+    crossorigin="anonymous">
+  </script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
