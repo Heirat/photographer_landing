@@ -382,6 +382,7 @@ button {
 }
 .menu__box ul {
   list-style: none;
+  padding: 0;
 }
 
 .menu__item {
@@ -391,9 +392,6 @@ button {
   text-align: center;
   font-size: 20px;
   transition-duration: 0.25s;
-}
-.menu__item:hover, .menu__item:focus {
-  color: #3E1B1B;
 }
 
 .menu__item:hover {
@@ -600,6 +598,7 @@ button {
 .faq-answer {
   margin-top: 15px;
   margin-left: 72px;
+  transition: all 0.25s ease;
   display: none;
 }
 
