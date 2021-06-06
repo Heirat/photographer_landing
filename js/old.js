@@ -6,11 +6,11 @@ $(function () {
 
   $(document).ready(function () {
     $('.faq-question').on('click', function () {
-      
+
       $ul = $(this).closest('ul'); // faq-questions
       $answer = $(this).closest('li').find($answer_class); // faq-answer нажатого вопроса
 
-      if (! $(this).closest('li').hasClass($li_opened)) {
+      if (!$(this).closest('li').hasClass($li_opened)) {
 
         $ul.find('li').each(function () {
           if ($(this).hasClass($li_opened))
@@ -25,3 +25,11 @@ $(function () {
     });
   });
 });
+
+const openMenu = () => {
+  headerOuterElem.classList.add('menu-opened');
+  headerLogoElem.classList.add('invisible');
+  overlayElem.classList.remove('invisible');
+  // Закрыть список меню
+  menuToggleElem.checked = true;
+}
