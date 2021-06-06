@@ -2,31 +2,26 @@ new WOW().init();
 const headerOuterElem = document.querySelector('.header-outer');
 const menuToggleElem = document.querySelector('#menu__toggle');
 const headerLogoElem = document.querySelector('.logo');
-const hamburgerMenuElem = document.querySelector('.hamburger-menu');
+const menuElem = document.querySelector('.menu');
 const overlayElem = document.querySelector('.overlay');
+const menuBoxElem = document.querySelector('.menu__box')
 
 const noScrollState = () => {
   // Шапка не прокручена
   headerOuterElem.classList.remove('scrolled');
-  // Закрыть список меню
-  menuToggleElem.checked = false;
   // Скрыть бургер-кнопку
-  hamburgerMenuElem.classList.add('d-none');
-  // Состояние шапки при закрытом меню
-  headerOuterElem.classList.remove('menu-opened');
-  // Показать лого
-  headerLogoElem.classList.remove('invisible');
-  // Скрыть наложение
-  overlayElem.classList.add('invisible');
+  menuElem.classList.add('d-none');
+  closeMenu();
 };
 
 const scrollState = () => {
   // Шапка прокручена
   headerOuterElem.classList.add('scrolled');
   // Показать бургер-кнопку
-  hamburgerMenuElem.classList.remove('d-none');
-}
-window.onscroll = function () {
+  menuElem.classList.remove('d-none');
+};
+
+window.onscroll = () => {
   let scrollPos = window.pageYOffset;
   if (scrollPos < 100) {
     noScrollState();
@@ -44,10 +39,25 @@ const toggleMenu = () => {
   overlayElem.classList.toggle('invisible');
 };
 
-menuToggleElem.addEventListener('click', toggleMenu)
+const closeMenu = () => {
+  headerOuterElem.classList.remove('menu-opened');
+  headerLogoElem.classList.remove('invisible');
+  overlayElem.classList.add('invisible');
+  // Закрыть список меню
+  menuToggleElem.checked = false;
+}
 
-$(document).ready(function(){
-  $(".faq-question").on("click", function() {
-    $(this).parent().toggleClass('opened');    
+menuToggleElem.addEventListener('click', toggleMenu)
+menuBoxElem.addEventListener('click', (event) => {
+  const target = event.target;
+  if (target.classList.contains('overlay') ||
+    target.classList.contains('menu__item')) {
+    closeMenu();
+  }
+})
+
+$(document).ready(function () {
+  $(".faq-question").on("click", function () {
+    $(this).parent().toggleClass('opened');
   });
 });
