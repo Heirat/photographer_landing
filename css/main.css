@@ -634,34 +634,34 @@ button {
   background: #CBD0E3;
   padding: 80px 0;
 }
+.contact-form__inputs {
+  margin: 57px 0;
+}
+.contact-form__input-wrapper {
+  width: 80%;
+}
+.contact-form__input-wrapper:nth-child(-n+2) {
+  margin-bottom: 30px;
+}
+.contact-form__input {
+  width: 100%;
+  height: 60px;
+  padding: 15px 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.contact-form__text {
+  margin-bottom: 35px;
+  text-align: center;
+}
 
 .form-wrap {
   padding: 50px 0;
   background: #D9BDBD;
   border-radius: 5px;
   box-shadow: 0px 4px 4px rgba(62, 27, 27, 0.5);
-}
-
-.contact-form__input {
-  border-radius: 5px;
-  height: 60px;
-  width: 445px;
-  font-size: 20px;
-  padding: 15px 10px;
-  font-family: "Segoe UI", "Helvetica Neue", sans-serif;
-}
-
-.contact-form__inputs {
-  margin: 57px 0;
-}
-
-.contact-form__input-wrapper:nth-child(-n+2) {
-  margin-bottom: 30px;
-}
-
-.contact-form__text {
-  margin-bottom: 35px;
-  text-align: center;
 }
 
 .steps {
