@@ -12,10 +12,14 @@
 @media screen and (max-width: 768px) {}
 
 @media screen and (max-width: 576px) {
-  .faq__header {
-    margin-top: 30px;
+  h2 {
     text-align: center;
   }
+
+  .faq__header {
+    margin-top: 30px;
+  }
+
   .step-wrapper:not(:last-child) {
     margin-right: unset;
   }

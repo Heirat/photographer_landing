@@ -70,6 +70,7 @@
             </ul>
           </nav>
           <div class="menu d-md-none">
+            <div class="overlay invisible"></div>
             <input id="menu__toggle" type="checkbox" />
             <label class="menu__btn" for="menu__toggle">
               <span></span>
@@ -90,26 +91,25 @@
       </div>
     </div>
   </header>
-  <div class="overlay invisible"></div>
+
   <main class="main">
-    <div class="gradient_1">
-      <div class="gradient_2">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-9 offer-cont">
-              <h1 class="offer-cont__title">Фотограф Виктория Морева</h1>
-              <p class="offer-cont__text">Женский портрет, как искусство</p>
-              <a href="#" class="button button-primary">Заказать фотосессию</a>
+    <div class="bg">
+      <div class="gradient_1">
+        <div class="gradient_2">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-9 offer-cont">
+                <h1 class="offer-cont__title">Фотограф Виктория Морева</h1>
+                <p class="offer-cont__text">Женский портрет, как искусство</p>
+                <a href="#" class="button button-primary">Заказать фотосессию</a>
+              </div>
             </div>
           </div>
-
         </div>
         <img src="img/waves/wave-1.png" alt="" class="wave
             wave_bottom-inside">
       </div>
-
     </div>
-
   </main>
 
   <section class="about">
@@ -131,7 +131,6 @@
               <img src="img/about/hero-2.jpg" alt="" class="hero-2__img">
               <img src="img/about/hero-2__spot-right.svg" alt="" class="hero-2__spot-right">
             </div>
-
           </div>
         </div>
         <div class="col-sm-6">
@@ -139,7 +138,6 @@
           <div class="hero-1 d-sm-none">
             <img src="img/about/hero-1.jpg" alt="Виктория Морева" class="hero-1__img">
           </div>
-
           <p class="about__text">Привет! Меня зовут Виктория, я фотограф
             с опытом работы более 2 лет. Я обожаю снимать в жанре женский
             портрет. И приглашаю тебя на классную фотосессию. Мы вместе
@@ -157,7 +155,7 @@
     <div class="bg-wrap">
       <div class="container">
         <div class="row">
-          <div class="col offset-1">
+          <div class="col offset-sm-1">
             <a name="portfolio" class="anchor-link"></a>
             <h2 class="portfolio__header">Портфолио</h2>
           </div>
@@ -165,7 +163,7 @@
         <div class="row">
           <div class="col">
             <div class="fotorama portfolio__slider" data-nav="thumbs" data-allowfullscreen="true" data-loop="true"
-              shadows="false">
+              shadows="false" data-height="80%">
               <img href="img/1.jpg" alt="" width="64">
               <img href="img/2.jpg" alt="">
               <img src="img/3.jpg" alt="">
@@ -184,10 +182,10 @@
   <section class="faq">
     <div class="container">
       <div class="row">
-        <div class="col-md-5 d-none d-md-block">
+        <div class="faq-image col-md-5 d-none d-md-block">
           <img src="img/faq-hero-compressed.jpg" alt="FAQ">
         </div>
-        <div class="col-md-7">
+        <div class="col-md-6 offset-md-1">
           <h2 class="faq__header">Частые вопросы</h2>
           <ul class="faq-questions">
             <li class="faq-questions-item opened">

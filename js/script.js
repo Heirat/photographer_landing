@@ -1,10 +1,11 @@
 new WOW().init();
+
 // Menu (begin) 
 const headerOuterElem = document.querySelector('.header-outer');
 const menuElem = document.querySelector('.menu');
 //const menuBtnElem = document.querySelector('.menu__btn');
 const menuToggleElem = document.querySelector('#menu__toggle');
-const menuBoxElem = document.querySelector('.menu__box');
+//const menuBoxElem = document.querySelector('.menu__box');
 const headerLogoElem = document.querySelector('.logo');
 const overlayElem = document.querySelector('.overlay');
 
@@ -47,26 +48,22 @@ const closeMenu = () => {
   overlayElem.classList.add('invisible');
   // Закрыть список меню
   menuToggleElem.checked = false;
-  enableScroll();
 }
 
-menuToggleElem.addEventListener('click', toggleMenu)
-menuBoxElem.addEventListener('click', (event) => {
-  const target = event.target;
+menuToggleElem.addEventListener('click', toggleMenu);
+menuElem.addEventListener('click', (event) => {
+  console.log(target);
   if (target.classList.contains('overlay') ||
     target.classList.contains('menu__item')) {
     closeMenu();
   }
-})
-
+});
 // Menu (end)
 
 // Faq (begin)
-
 $(document).ready(function () {
   $(".faq-question").on("click", function () {
     $(this).parent().toggleClass('opened');
   });
 });
-
 // Faq (end)

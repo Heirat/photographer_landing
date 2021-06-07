@@ -5,9 +5,12 @@
   }
 }
 @media screen and (max-width: 576px) {
+  h2 {
+    text-align: center;
+  }
+
   .faq__header {
     margin-top: 30px;
-    text-align: center;
   }
 
   .step-wrapper:not(:last-child) {
