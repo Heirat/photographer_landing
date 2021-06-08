@@ -33,6 +33,7 @@
 .name {
   white-space: nowrap;
   @include font-size($h4-font-sizes);
+  font-weight: 500 !important;
 }
 
 .nav__item:not(:last-child) {
@@ -42,7 +43,7 @@
 .link {
   color: $text;
   white-space: nowrap;
-  font-size: 16px;
+  cursor: pointer;
 
   &:hover,
   &:focus {
@@ -52,7 +53,6 @@
 
 .nav .button-outline {
   padding: clamp(5px, calc(3.75px + 0.3906vw), 10px) clamp(10px, calc(11.25px + 0.5469vw), 20px);
-  font-size: 16px;
 }
 
 .header-outer.scrolled .hamburger-menu {
@@ -104,7 +104,6 @@
   position: relative;
   width: 26px;
   height: 26px;
-
   cursor: pointer;
   z-index: 80;
 }
@@ -161,10 +160,10 @@
   text-align: center;
   font-size: 20px;
   transition-duration: .25s;
-}
 
-.menu__item:hover {
-  background-color: $primary-btn-color;
+  &:hover {
+    background-color: $primary-btn-color;
+  }
 }
 
 .menu__hr {
@@ -519,5 +518,96 @@
   top: -30px;
   z-index: -1;
 }
+
+// Instagram (begin)
+
+.instagram {
+  padding-top: clamp(40px, calc(20.0px + 6.3vw), 120px);
+}
+
+.instagram-wrapper {
+  position: relative;
+
+  & a {
+    @include font-size($h2-font-sizes);
+  }
+
+  // box shadow?
+
+  &__big-spot {
+    position: absolute;
+    width: clamp(322px, calc(104.2px + 28.4vw), 558px);
+    height: clamp(347px, calc(167.0px + 23.4vw), 542px);
+    right: clamp(-20px, calc(32.6px - 3.3vw), 0px);
+
+    z-index: -10;
+  }
+
+  &__small-spot {
+    position: absolute;
+    width: clamp(148px, calc(48.3px + 13.0vw), 256px);
+    height: clamp(121px, calc(57.3px + 8.3vw), 190px);
+    right: -10px;
+    bottom: 100px;
+    z-index: -5;
+  }
+
+  &__flower {
+    position: absolute;
+    width: clamp(110px, calc(62.9px + 6.1vw), 161px);
+    height: clamp(110px, calc(62.9px + 6.1vw), 161px);
+    left: 150px;
+    bottom: 90px;
+    z-index: -5;
+  }
+}
+
+.instagram-id {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: clamp(90px, calc(34.6px + 7.2vw), 150px);
+
+  &__link {
+    margin-right: clamp(6px, calc(-18.0px + 3.1vw), 32px);
+  }
+}
+
+.instagram-subscribe {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  font-weight: 300;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
+
+  & .link::after {
+    content: url(/icn/click-finger.svg);
+    width: clamp(15px, calc(8.8px + 2.0vw), 40px);
+    height: clamp(15px, calc(8.8px + 2.0vw), 40px);
+    position: absolute;
+    bottom: -30px;
+    right: -15px;
+  }
+}
+
+
+
+.grid {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: clamp(16px, calc(12.5px + 1.1vw), 30px);
+  padding-top: clamp(23px, calc(20.8px + 0.7vw), 32px);
+
+
+  &__item {
+    box-shadow: 0px 4px 4px rgba(62, 27, 27, 0.5);
+  }
+}
+
+// Instagram (end)
 
 @import 'adaptive';

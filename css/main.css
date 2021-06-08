@@ -56,10 +56,6 @@ select:focus {
     scroll-behavior: auto !important;
   }
 }
-.fw-medium {
-  font-weight: 500 !important;
-}
-
 body {
   font-size: 18px;
   font-family: "Raleway", sans-serif;
@@ -263,6 +259,7 @@ button {
 .name {
   white-space: nowrap;
   font-size: 20px;
+  font-weight: 500 !important;
 }
 @media screen and (min-width: 768px) {
   .name {
@@ -282,7 +279,7 @@ button {
 .link {
   color: #3E1B1B;
   white-space: nowrap;
-  font-size: 16px;
+  cursor: pointer;
 }
 .link:hover, .link:focus {
   color: #3E1B1B;
@@ -290,7 +287,6 @@ button {
 
 .nav .button-outline {
   padding: clamp(5px, calc(3.75px + 0.3906vw), 10px) clamp(10px, calc(11.25px + 0.5469vw), 20px);
-  font-size: 16px;
 }
 
 .header-outer.scrolled .hamburger-menu {
@@ -393,7 +389,6 @@ button {
   font-size: 20px;
   transition-duration: 0.25s;
 }
-
 .menu__item:hover {
   background-color: #F5EEEE;
 }
@@ -727,6 +722,94 @@ button {
   right: 0;
   top: -30px;
   z-index: -1;
+}
+
+.instagram {
+  padding-top: clamp(40px, calc(20.0px + 6.3vw), 120px);
+}
+
+.instagram-wrapper {
+  position: relative;
+}
+.instagram-wrapper a {
+  font-size: 26px;
+}
+@media screen and (min-width: 768px) {
+  .instagram-wrapper a {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .instagram-wrapper a {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .instagram-wrapper a {
+    font-size: 36px;
+  }
+}
+.instagram-wrapper__big-spot {
+  position: absolute;
+  width: clamp(322px, calc(104.2px + 28.4vw), 558px);
+  height: clamp(347px, calc(167.0px + 23.4vw), 542px);
+  right: clamp(-20px, calc(32.6px - 3.3vw), 0px);
+  z-index: -10;
+}
+.instagram-wrapper__small-spot {
+  position: absolute;
+  width: clamp(148px, calc(48.3px + 13.0vw), 256px);
+  height: clamp(121px, calc(57.3px + 8.3vw), 190px);
+  right: -10px;
+  bottom: 100px;
+  z-index: -5;
+}
+.instagram-wrapper__flower {
+  position: absolute;
+  width: clamp(110px, calc(62.9px + 6.1vw), 161px);
+  height: clamp(110px, calc(62.9px + 6.1vw), 161px);
+  left: 150px;
+  bottom: 90px;
+  z-index: -5;
+}
+
+.instagram-id {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: clamp(90px, calc(34.6px + 7.2vw), 150px);
+}
+.instagram-id__link {
+  margin-right: clamp(6px, calc(-18.0px + 3.1vw), 32px);
+}
+
+.instagram-subscribe {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  font-weight: 300;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
+}
+.instagram-subscribe .link::after {
+  content: url(/icn/click-finger.svg);
+  width: clamp(15px, calc(8.8px + 2.0vw), 40px);
+  height: clamp(15px, calc(8.8px + 2.0vw), 40px);
+  position: absolute;
+  bottom: -30px;
+  right: -15px;
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: clamp(16px, calc(12.5px + 1.1vw), 30px);
+  padding-top: clamp(23px, calc(20.8px + 0.7vw), 32px);
+}
+.grid__item {
+  box-shadow: 0px 4px 4px rgba(62, 27, 27, 0.5);
 }
 
 @media screen and (max-width: 992px) {
