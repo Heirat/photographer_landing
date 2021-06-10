@@ -7,6 +7,13 @@
     padding: 0 !important;
     border: none;
   }
+
+  .instagram-wrapper {
+    &__small-spot {
+      right: clamp(-25px, calc(-75.8px + 6.6vw), 30px);
+      //bottom: clamp(-16px, calc(-140.6px + 15.8vw), 80px);
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {}

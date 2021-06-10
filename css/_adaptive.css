@@ -3,6 +3,10 @@
     padding: 0 !important;
     border: none;
   }
+
+  .instagram-wrapper__small-spot {
+    right: clamp(-25px, calc(-75.8px + 6.6vw), 30px);
+  }
 }
 @media screen and (max-width: 576px) {
   h2 {
