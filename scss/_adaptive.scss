@@ -16,7 +16,19 @@
   }
 }
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+  .instagram-wrapper {
+    background-image: unset;
+
+    &__small-spot {
+      display: none;
+    }
+
+    &__flower {
+      display: none;
+    }
+  }
+}
 
 @media screen and (max-width: 576px) {
   h2 {

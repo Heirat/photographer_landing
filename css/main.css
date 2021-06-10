@@ -753,13 +753,6 @@ button {
     font-size: 34px;
   }
 }
-.instagram-wrapper__big-spot {
-  position: absolute;
-  width: clamp(322px, calc(104.2px + 28.4vw), 558px);
-  height: clamp(347px, calc(167.0px + 23.4vw), 542px);
-  right: clamp(-20px, calc(32.6px - 3.3vw), 0px);
-  z-index: -10;
-}
 .instagram-wrapper__small-spot {
   position: absolute;
   width: clamp(148px, calc(48.3px + 13.0vw), 256px);
@@ -823,6 +816,10 @@ button {
   box-shadow: 0px 4px 4px rgba(62, 27, 27, 0.5);
 }
 
+.footer {
+  background: #D9BDBD;
+}
+
 @media screen and (max-width: 992px) {
   .button-outline {
     padding: 0 !important;
@@ -831,6 +828,17 @@ button {
 
   .instagram-wrapper__small-spot {
     right: clamp(-25px, calc(-75.8px + 6.6vw), 30px);
+  }
+}
+@media screen and (max-width: 768px) {
+  .instagram-wrapper {
+    background-image: unset;
+  }
+  .instagram-wrapper__small-spot {
+    display: none;
+  }
+  .instagram-wrapper__flower {
+    display: none;
   }
 }
 @media screen and (max-width: 576px) {

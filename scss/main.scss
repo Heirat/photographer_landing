@@ -528,7 +528,6 @@
 .instagram-wrapper {
   position: relative;
   right: clamp(-50px, calc(46.2px - 6.0vw), 0px);
-  //height: clamp(347px, calc(167.0px + 23.4vw), 542px);
   background-image: url(/img/instagram/big-spot.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -538,15 +537,6 @@
   }
 
   // box shadow?
-
-  &__big-spot {
-    position: absolute;
-    width: clamp(322px, calc(104.2px + 28.4vw), 558px);
-    height: clamp(347px, calc(167.0px + 23.4vw), 542px);
-    right: clamp(-20px, calc(32.6px - 3.3vw), 0px);
-
-    z-index: -10;
-  }
 
   &__small-spot {
     position: absolute;
@@ -621,5 +611,15 @@
 }
 
 // Instagram (end)
+
+// Footer (begin)
+
+.footer {
+
+  background: #D9BDBD;
+
+}
+
+// Footer (end)
 
 @import 'adaptive';
