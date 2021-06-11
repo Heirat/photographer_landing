@@ -19,6 +19,10 @@
 @media screen and (max-width: 768px) {
   .instagram-wrapper {
     background-image: unset;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
 
     &__small-spot {
       display: none;
@@ -27,6 +31,20 @@
     &__flower {
       display: none;
     }
+  }
+
+  .instagram-id {
+    margin: 0;
+    padding: 0;
+
+    &__icn {
+      display: none;
+    }
+  }
+
+  .instagram-subscribe {
+    margin: 0;
+    padding: 0;
   }
 }
 

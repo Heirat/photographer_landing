@@ -52,6 +52,7 @@ const closeMenu = () => {
 
 menuToggleElem.addEventListener('click', toggleMenu);
 menuElem.addEventListener('click', (event) => {
+  const target = event.target;
   console.log(target);
   if (target.classList.contains('overlay') ||
     target.classList.contains('menu__item')) {
