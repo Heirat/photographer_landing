@@ -498,7 +498,7 @@
 .instagram-wrapper {
   position: relative;
   right: clamp(-50px, calc(46.2px - 6.0vw), 0px);
-  background-image: url(/img/instagram/big-spot.png);
+  background-image: url(../img/instagram/big-spot.png);
   background-repeat: no-repeat;
   background-size: contain;
 
@@ -559,7 +559,7 @@
 
   & .link::after {
     content: "";
-    background-image: url(/icn/click-finger.svg);
+    background-image: url(../icn/click-finger.svg);
     background-size: clamp(30px, calc(27.5px + 0.8vw), 40px) clamp(30px, calc(27.5px + 0.8vw), 40px);
     width: clamp(30px, calc(27.5px + 0.8vw), 40px);
     height: clamp(30px, calc(27.5px + 0.8vw), 40px);
