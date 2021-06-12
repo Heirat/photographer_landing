@@ -4,6 +4,11 @@
     border: none;
   }
 
+  .hero-1 {
+    width: 100%;
+    position: relative;
+  }
+
   .instagram-wrapper__small-spot {
     right: clamp(-25px, calc(-75.8px + 6.6vw), 30px);
   }
@@ -41,6 +46,19 @@
     text-align: center;
   }
 
+  .hero-1 {
+    position: relative;
+    float: left;
+    width: 50% !important;
+    top: 0 !important;
+    left: 0;
+    margin: 0 15px 7px 0;
+  }
+  .hero-1__img {
+    position: relative;
+    top: 0;
+  }
+
   .faq__header {
     margin-top: 30px;
   }
@@ -65,5 +83,9 @@
     margin-left: auto;
     margin-right: auto;
     font-size: 18px;
+  }
+
+  .footer-wrapper {
+    text-align: center;
   }
 }
