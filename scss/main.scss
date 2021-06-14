@@ -51,10 +51,6 @@
   }
 }
 
-.nav .button-outline {
-  padding: clamp(5px, calc(3.75px + 0.3906vw), 10px) clamp(10px, calc(11.25px + 0.5469vw), 20px);
-}
-
 .header-outer.scrolled .hamburger-menu {
   display: block;
   transition: all .25s ease;
@@ -321,6 +317,7 @@
 
 .faq-questions {
   margin-top: 60px;
+  margin-bottom: 100px;
 
   &-item:not(:first-child) {
     margin-top: 16px;
@@ -374,16 +371,30 @@
 .advantages {
   margin-top: 80px;
   margin-bottom: 80px;
+
+  &-list {
+    margin-top: 3em;
+    font-family: "Segoe UI",
+      "Helvetica Neue",
+      sans-serif;
+    list-style: decimal inside !important;
+    @include font-size($p-font-sizes);
+
+    &__item {
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+
+
+  }
 }
 
 .bg-wrap {
   background: $bg-light;
   padding-top: 30px;
   padding-bottom: 80px;
-}
-
-.advantages>.bg-wrap {
-  min-height: 500px;
 }
 
 // \ Adavantages

@@ -1,5 +1,6 @@
 // Цвета
 $primary-btn-bg: #9F5B5B;
+$hover-btn-bg: #985050;
 $accent-color: #CBD0E3;
 $text: #3E1B1B;
 $primary-btn-color: #F5EEEE;
@@ -34,7 +35,6 @@ $h3-font-sizes: (null: 18px,
   1200px: 34px);
 
 $h4-font-sizes: (null: 20px,
-  768px: 20px,
   1200px: 24px);
 
 $button-font-sizes: (null: 20px,
@@ -43,7 +43,6 @@ $button-font-sizes: (null: 20px,
   1200px: 30px);
 
 $p-font-sizes: (null: 18px,
-  768px: 18px,
   1200px: 20px);
 
 $small-font-sizes: (null: 14px,
@@ -129,32 +128,40 @@ button {
   display: inline-block;
   align-items: center;
   justify-content: center;
+  position: relative;
   border-radius: 5px;
   cursor: pointer;
   text-decoration: none;
-  transition: all 0.5s ease;
-}
 
-.button-primary {
-  background: $primary-btn-bg;
-  color: $primary-btn-color;
-  @include font-size($button-font-sizes);
-  box-shadow: 0px 4px 4px rgba(62, 27, 27, 0.5);
-  padding: 20px 40px;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 
-  &:hover {
+  &-primary {
+    background: $primary-btn-bg;
     color: $primary-btn-color;
+    @include font-size($button-font-sizes);
+    box-shadow: 0px 4px 4px rgba(62, 27, 27, 0.5);
+    padding: clamp(10px, calc(7.5px + 0.8vw), 20px) clamp(20px, calc(15.0px + 1.6vw), 40px);
+
+    &:hover {
+      color: $primary-btn-color;
+      background-color: $hover-btn-bg;
+    }
+
+    &:active {
+      box-shadow: unset;
+    }
+  }
+
+  &-outline {
+    border: 1px solid #3E1B1B;
+    padding: clamp(5px, calc(3.75px + 0.3906vw), 10px) clamp(10px, calc(11.25px + 0.5469vw), 20px);
+
+    &:hover {
+      color: $text;
+    }
   }
 }
-
-.button-outline {
-  border: 1px solid #3E1B1B;
-
-  &:hover {
-    color: $text;
-  }
-}
-
 
 .wave {
   position: relative;
