@@ -1,4 +1,10 @@
 @media screen and (max-width: 992px) {
+  .main-bg {
+    min-height: 768px;
+    height: 100vh;
+    max-height: 992px;
+  }
+
   .button-outline {
     padding: 0 !important;
     border: none;
@@ -8,12 +14,14 @@
     width: 100%;
     position: relative;
   }
-
-  .instagram-wrapper__small-spot {
-    right: clamp(-25px, calc(-75.8px + 6.6vw), 30px);
-  }
 }
 @media screen and (max-width: 768px) {
+  .main-bg {
+    min-height: 550px;
+    height: 100vh;
+    max-height: 768px;
+  }
+
   .instagram-wrapper {
     background-image: unset;
     display: flex;
@@ -42,6 +50,12 @@
   }
 }
 @media screen and (max-width: 576px) {
+  .main-bg {
+    min-height: 500px;
+    height: 100vh;
+    max-height: 576px;
+  }
+
   h2 {
     text-align: center;
   }
