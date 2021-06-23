@@ -384,16 +384,38 @@
 	margin-top: 80px;
 	margin-bottom: 80px;
 
+	&-wrapper {
+		position: relative;
+		padding: 45px 0px;
+		margin: 0px 30px;
+		border: 1px solid $text;
+
+		&__picture {
+			position: absolute;
+			width: 100px;
+			height: 130px;
+			right: -30px;
+			bottom: -50px;
+			padding: 0;
+		}
+	}
+
 	&-list {
 		margin-top: 3em;
 		font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
-		list-style: decimal inside !important;
 		@include font-size($p-font-sizes);
 
 		&__item {
+			display: flex;
 			&:not(:last-child) {
 				margin-bottom: 20px;
 			}
+		}
+
+		&__digit {
+			margin-top: 0.3em;
+			margin-right: 8px;
+			height: 20px;
 		}
 	}
 }
@@ -502,7 +524,7 @@
 }
 
 @for $i from 1 through 5 {
-	@include step-num($i);
+	@include step-bg($i);
 }
 
 // Instagram (begin)

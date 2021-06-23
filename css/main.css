@@ -558,10 +558,23 @@ button {
   margin-top: 80px;
   margin-bottom: 80px;
 }
+.advantages-wrapper {
+  position: relative;
+  padding: 45px 0px;
+  margin: 0px 30px;
+  border: 1px solid #3e1b1b;
+}
+.advantages-wrapper__picture {
+  position: absolute;
+  width: 100px;
+  height: 130px;
+  right: -30px;
+  bottom: -50px;
+  padding: 0;
+}
 .advantages-list {
   margin-top: 3em;
   font-family: "Segoe UI", "Helvetica Neue", sans-serif;
-  list-style: decimal inside !important;
   font-size: 18px;
 }
 @media screen and (min-width: 1200px) {
@@ -569,8 +582,16 @@ button {
     font-size: 20px;
   }
 }
+.advantages-list__item {
+  display: flex;
+}
 .advantages-list__item:not(:last-child) {
   margin-bottom: 20px;
+}
+.advantages-list__digit {
+  margin-top: 0.3em;
+  margin-right: 8px;
+  height: 20px;
 }
 
 .bg-wrap {

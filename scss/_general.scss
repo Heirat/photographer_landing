@@ -11,7 +11,7 @@ $light: #fff;
 
 // Миксины
 
-@mixin step-num($num) {
+@mixin step-bg($num) {
 	#step_#{$num} {
 		background-image: url('../img/steps/spot_#{$num}.svg');
 	}
