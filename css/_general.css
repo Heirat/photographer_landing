@@ -1,7 +1,7 @@
 body {
   font-size: 18px;
   font-family: "Raleway", sans-serif;
-  color: #3E1B1B;
+  color: #3e1b1b;
 }
 
 a {
@@ -113,11 +113,11 @@ button {
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .button-primary {
-  background: #9F5B5B;
-  color: #F5EEEE;
+  background: #9f5b5b;
+  color: #f5eeee;
   font-size: 20px;
   box-shadow: 0px 4px 4px rgba(62, 27, 27, 0.5);
-  padding: clamp(10px, calc(7.5px + 0.8vw), 20px) clamp(20px, calc(15.0px + 1.6vw), 40px);
+  padding: 10px 20px;
 }
 @media screen and (min-width: 768px) {
   .button-primary {
@@ -135,18 +135,18 @@ button {
   }
 }
 .button-primary:hover {
-  color: #F5EEEE;
+  color: #f5eeee;
   background-color: #985050;
 }
 .button-primary:active {
   box-shadow: unset;
 }
 .button-outline {
-  border: 1px solid #3E1B1B;
+  border: 1px solid #3e1b1b;
   padding: clamp(5px, calc(3.75px + 0.3906vw), 10px) clamp(10px, calc(11.25px + 0.5469vw), 20px);
 }
 .button-outline:hover {
-  color: #3E1B1B;
+  color: #3e1b1b;
 }
 
 .wave {

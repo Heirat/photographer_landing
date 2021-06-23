@@ -1,88 +1,95 @@
 // Цвета
-$primary-btn-bg: #9F5B5B;
+$primary-btn-bg: #9f5b5b;
 $hover-btn-bg: #985050;
-$accent-color: #CBD0E3;
-$text: #3E1B1B;
-$primary-btn-color: #F5EEEE;
-$bg-light: #D9BDBD;
+$accent-color: #cbd0e3;
+$text: #3e1b1b;
+$primary-btn-color: #f5eeee;
+$bg-light: #d9bdbd;
 $light: #fff;
 
 // Константы
 
-
 // Миксины
 
 @mixin step-num($num) {
-  #step_#{$num} {
-    background-image: url("../img/steps/spot_#{$num}.svg");
-  }
+	#step_#{$num} {
+		background-image: url('../img/steps/spot_#{$num}.svg');
+	}
 }
 
-$h1-font-sizes: (null: 24px,
-  768px: 40px,
-  992px: 50px,
-  1200px: 52px);
+$h1-font-sizes: (
+	null: 24px,
+	768px: 40px,
+	992px: 50px,
+	1200px: 52px,
+);
 
-$h2-font-sizes: (null: 26px,
-  768px: 30px,
-  992px: 32px,
-  1200px: 36px);
+$h2-font-sizes: (
+	null: 26px,
+	768px: 30px,
+	992px: 32px,
+	1200px: 36px,
+);
 
-$h3-font-sizes: (null: 18px,
-  320px: 20px,
-  768px: 26px,
-  992px: 30px,
-  1200px: 34px);
+$h3-font-sizes: (
+	null: 18px,
+	320px: 20px,
+	768px: 26px,
+	992px: 30px,
+	1200px: 34px,
+);
 
-$h4-font-sizes: (null: 20px,
-  1200px: 24px);
+$h4-font-sizes: (
+	null: 20px,
+	1200px: 24px,
+);
 
-$button-font-sizes: (null: 20px,
-  768px: 24px,
-  992px: 26px,
-  1200px: 30px);
+$button-font-sizes: (
+	null: 20px,
+	768px: 24px,
+	992px: 26px,
+	1200px: 30px,
+);
 
-$p-font-sizes: (null: 18px,
-  1200px: 20px);
+$p-font-sizes: (
+	null: 18px,
+	1200px: 20px,
+);
 
-$small-font-sizes: (null: 14px,
-  768px: 16px,
-  992px: 18px);
+$small-font-sizes: (
+	null: 14px,
+	768px: 16px,
+	992px: 18px,
+);
 
 @mixin font-size($fs-map) {
-
-  @each $fs-breakpoint,
-  $fs-font-size in $fs-map {
-    @if $fs-breakpoint==null {
-      font-size: $fs-font-size;
-    }
-
-    @else {
-      @media screen and (min-width: $fs-breakpoint) {
-        font-size: $fs-font-size;
-      }
-    }
-  }
+	@each $fs-breakpoint, $fs-font-size in $fs-map {
+		@if $fs-breakpoint==null {
+			font-size: $fs-font-size;
+		} @else {
+			@media screen and (min-width: $fs-breakpoint) {
+				font-size: $fs-font-size;
+			}
+		}
+	}
 }
 
 // Теги
 
 body {
-  font-size: 18px;
-  font-family: 'Raleway', sans-serif;
-  color: $text;
+	font-size: 18px;
+	font-family: 'Raleway', sans-serif;
+	color: $text;
 }
 
-
 a {
-  color: inherit;
-  text-decoration: none;
+	color: inherit;
+	text-decoration: none;
 }
 
 // a:focus {
 //   // outline обводка
 // }
-
 
 // Типография
 
@@ -90,94 +97,94 @@ h1,
 h2,
 h3,
 h4 {
-  margin-top: 0;
-  margin-bottom: 0;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 h1,
 h2 {
-  font-family: 'Playfair Display', serif;
+	font-family: 'Playfair Display', serif;
 }
 
-
 h1 {
-  @include font-size($h1-font-sizes);
+	@include font-size($h1-font-sizes);
 }
 
 h2 {
-  @include font-size($h2-font-sizes);
+	@include font-size($h2-font-sizes);
 }
 
 h4 {
-  @include font-size($h4-font-sizes);
+	@include font-size($h4-font-sizes);
 }
 
 p,
 span,
 a {
-  @include font-size($p-font-sizes);
+	@include font-size($p-font-sizes);
 }
 
 button {
-  @include font-size($button-font-sizes);
+	@include font-size($button-font-sizes);
 }
 
 // Классы общие для всего сайта
 
 .button {
-  display: inline-block;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  border-radius: 5px;
-  cursor: pointer;
-  text-decoration: none;
+	display: inline-block;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	border-radius: 5px;
+	cursor: pointer;
+	text-decoration: none;
 
-  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+	-webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+	transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 
-  &-primary {
-    background: $primary-btn-bg;
-    color: $primary-btn-color;
-    @include font-size($button-font-sizes);
-    box-shadow: 0px 4px 4px rgba(62, 27, 27, 0.5);
-    padding: clamp(10px, calc(7.5px + 0.8vw), 20px) clamp(20px, calc(15.0px + 1.6vw), 40px);
+	&-primary {
+		background: $primary-btn-bg;
+		color: $primary-btn-color;
+		@include font-size($button-font-sizes);
+		box-shadow: 0px 4px 4px rgba(62, 27, 27, 0.5);
+		padding: 10px 20px;
 
-    &:hover {
-      color: $primary-btn-color;
-      background-color: $hover-btn-bg;
-    }
+		&:hover {
+			color: $primary-btn-color;
+			background-color: $hover-btn-bg;
+		}
 
-    &:active {
-      box-shadow: unset;
-    }
-  }
+		&:active {
+			box-shadow: unset;
+		}
+	}
 
-  &-outline {
-    border: 1px solid #3E1B1B;
-    padding: clamp(5px, calc(3.75px + 0.3906vw), 10px) clamp(10px, calc(11.25px + 0.5469vw), 20px);
+	&-outline {
+		border: 1px solid #3e1b1b;
+		padding: clamp(5px, calc(3.75px + 0.3906vw), 10px)
+			clamp(10px, calc(11.25px + 0.5469vw), 20px);
 
-    &:hover {
-      color: $text;
-    }
-  }
+		&:hover {
+			color: $text;
+		}
+	}
 }
 
 .wave {
-  position: relative;
-  width: 100%;
-  z-index: 50;
+	position: relative;
+	width: 100%;
+	z-index: 50;
 }
 
 .wave_top {
-  bottom: -5px;
+	bottom: -5px;
 }
 
 .wave_bottom {
-  top: -5px;
+	top: -5px;
 }
 
 .wave_bottom-inside {
-  position: absolute !important;
-  bottom: -5px;
+	position: absolute !important;
+	bottom: -5px;
 }

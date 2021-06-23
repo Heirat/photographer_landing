@@ -59,7 +59,7 @@ select:focus {
 body {
   font-size: 18px;
   font-family: "Raleway", sans-serif;
-  color: #3E1B1B;
+  color: #3e1b1b;
 }
 
 a {
@@ -171,11 +171,11 @@ button {
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .button-primary {
-  background: #9F5B5B;
-  color: #F5EEEE;
+  background: #9f5b5b;
+  color: #f5eeee;
   font-size: 20px;
   box-shadow: 0px 4px 4px rgba(62, 27, 27, 0.5);
-  padding: clamp(10px, calc(7.5px + 0.8vw), 20px) clamp(20px, calc(15.0px + 1.6vw), 40px);
+  padding: 10px 20px;
 }
 @media screen and (min-width: 768px) {
   .button-primary {
@@ -193,18 +193,18 @@ button {
   }
 }
 .button-primary:hover {
-  color: #F5EEEE;
+  color: #f5eeee;
   background-color: #985050;
 }
 .button-primary:active {
   box-shadow: unset;
 }
 .button-outline {
-  border: 1px solid #3E1B1B;
+  border: 1px solid #3e1b1b;
   padding: clamp(5px, calc(3.75px + 0.3906vw), 10px) clamp(10px, calc(11.25px + 0.5469vw), 20px);
 }
 .button-outline:hover {
-  color: #3E1B1B;
+  color: #3e1b1b;
 }
 
 .wave {
@@ -264,12 +264,12 @@ button {
 }
 
 .link {
-  color: #3E1B1B;
+  color: #3e1b1b;
   white-space: nowrap;
   cursor: pointer;
 }
 .link:hover, .link:focus {
-  color: #3E1B1B;
+  color: #3e1b1b;
 }
 
 .header-outer.scrolled .hamburger-menu {
@@ -373,7 +373,7 @@ button {
   transition-duration: 0.25s;
 }
 .menu__item:hover {
-  background-color: #F5EEEE;
+  background-color: #f5eeee;
 }
 
 .menu__hr {
@@ -419,10 +419,12 @@ button {
 .offer-cont {
   margin-top: clamp(190px, calc(158.5px + 9.8vw), 316px);
 }
-
 .offer-cont__text {
   margin-top: 20px;
   margin-bottom: 50px;
+}
+.offer-cont__button {
+  padding: clamp(10px, calc(7.5px + 0.8vw), 20px) clamp(20px, calc(15px + 1.6vw), 40px);
 }
 
 .about {
@@ -510,7 +512,7 @@ button {
 
 .faq-questions {
   margin-top: 60px;
-  margin-bottom: 100px;
+  margin-bottom: clamp(35px, calc(18.8px + 5.1vw), 100px);
 }
 .faq-questions-item:not(:first-child) {
   margin-top: 16px;
@@ -572,13 +574,13 @@ button {
 }
 
 .bg-wrap {
-  background: #D9BDBD;
+  background: #d9bdbd;
   padding-top: 30px;
   padding-bottom: 80px;
 }
 
 .contact-form {
-  background: #CBD0E3;
+  background: #cbd0e3;
   padding: 80px 0;
 }
 .contact-form__inputs {
@@ -606,7 +608,7 @@ button {
 
 .form-wrap {
   padding: 50px 0;
-  background: #D9BDBD;
+  background: #d9bdbd;
   border-radius: 5px;
   box-shadow: 0px 4px 4px rgba(62, 27, 27, 0.5);
 }
@@ -784,7 +786,7 @@ button {
   margin-top: 42px;
 }
 .footer-background {
-  background: #D9BDBD;
+  background: #d9bdbd;
   padding-top: 20px;
   padding-bottom: clamp(20px, calc(12.5px + 2.3vw), 50px);
 }

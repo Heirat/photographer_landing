@@ -216,11 +216,16 @@
 
 .offer-cont {
 	margin-top: clamp(190px, calc(158.5px + 9.8vw), 316px);
-}
 
-.offer-cont__text {
-	margin-top: 20px;
-	margin-bottom: 50px;
+	&__text {
+		margin-top: 20px;
+		margin-bottom: 50px;
+	}
+
+	&__button {
+		padding: clamp(10px, calc(7.5px + 0.8vw), 20px)
+			clamp(20px, calc(15px + 1.6vw), 40px);
+	}
 }
 
 // \ Main
@@ -324,7 +329,7 @@
 
 .faq-questions {
 	margin-top: 60px;
-	margin-bottom: 100px;
+	margin-bottom: clamp(35px, calc(18.8px + 5.1vw), 100px);
 
 	&-item:not(:first-child) {
 		margin-top: 16px;
