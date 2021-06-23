@@ -67,7 +67,7 @@ menuElem.addEventListener('click', (event) => {
 const faqQuestion = document.querySelectorAll('.faq-question');
 faqQuestion.forEach((question) => {
 	question.addEventListener('click', () => {
-		question.closest('.faq-questions-item').toggleClass('opened');
+		question.closest('.faq-questions-item').classList.toggle('opened');
 	});
 });
 // Faq (end)
