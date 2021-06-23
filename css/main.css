@@ -679,7 +679,9 @@ button {
 .instagram {
   padding-top: clamp(40px, calc(20px + 6.3vw), 120px);
 }
-
+.instagram__title {
+  text-align: start;
+}
 .instagram-wrapper {
   position: relative;
   right: clamp(-10px, calc(-19.2px + 1.2vw), 0px);
@@ -762,7 +764,7 @@ button {
   width: clamp(30px, calc(27.5px + 0.8vw), 40px);
   height: clamp(30px, calc(27.5px + 0.8vw), 40px);
   position: absolute;
-  bottom: -32px;
+  bottom: -33px;
   right: -1vw;
 }
 
@@ -772,7 +774,7 @@ button {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: clamp(10px, calc(8.8px + 0.4vw), 15px);
   width: fit-content;
-  padding-top: clamp(23px, calc(20.8px + 0.7vw), 32px);
+  padding-top: 39px;
 }
 .grid__item {
   box-shadow: 0px 4px 4px rgba(62, 27, 27, 0.5);
@@ -843,9 +845,6 @@ button {
 
   .instagram-wrapper {
     background-image: unset;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
     margin-top: 30px;
   }
   .instagram-wrapper__small-spot {
@@ -858,6 +857,7 @@ button {
   .instagram-id {
     margin: 0;
     padding: 0;
+    justify-content: start;
   }
   .instagram-id__icn {
     display: none;

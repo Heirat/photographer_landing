@@ -1,124 +1,123 @@
-@media screen and (max-width: 1400px) {}
+@media screen and (max-width: 1400px) {
+}
 
-@media screen and (max-width: 1200px) {}
+@media screen and (max-width: 1200px) {
+}
 
 @media screen and (max-width: 992px) {
-  .main-bg {
-    min-height: 768px;
-    height: 100vh;
-    max-height: 992px;
-  }
+	.main-bg {
+		min-height: 768px;
+		height: 100vh;
+		max-height: 992px;
+	}
 
-  .button-outline {
-    padding: 0 !important;
-    border: none;
-  }
+	.button-outline {
+		padding: 0 !important;
+		border: none;
+	}
 
-  .hero-1 {
-    width: 100%;
-    position: relative;
-  }
+	.hero-1 {
+		width: 100%;
+		position: relative;
+	}
 
-  .instagram-wrapper {
-    &__small-spot {
-      //right: clamp(-25px, calc(-75.8px + 6.6vw), 30px);
-      //bottom: clamp(-16px, calc(-140.6px + 15.8vw), 80px);
-    }
-  }
+	.instagram-wrapper {
+		&__small-spot {
+			//right: clamp(-25px, calc(-75.8px + 6.6vw), 30px);
+			//bottom: clamp(-16px, calc(-140.6px + 15.8vw), 80px);
+		}
+	}
 }
 
 @media screen and (max-width: 768px) {
-  .main-bg {
-    min-height: 550px;
-    height: 100vh;
-    max-height: 768px;
-  }
+	.main-bg {
+		min-height: 550px;
+		height: 100vh;
+		max-height: 768px;
+	}
 
-  .instagram-wrapper {
-    background-image: unset;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 30px;
+	.instagram-wrapper {
+		background-image: unset;
+		margin-top: 30px;
 
-    &__small-spot {
-      display: none;
-    }
+		&__small-spot {
+			display: none;
+		}
 
-    &__flower {
-      display: none;
-    }
-  }
+		&__flower {
+			display: none;
+		}
+	}
 
-  .instagram-id {
-    margin: 0;
-    padding: 0;
+	.instagram-id {
+		margin: 0;
+		padding: 0;
+		justify-content: start;
+		&__icn {
+			display: none;
+		}
+	}
 
-    &__icn {
-      display: none;
-    }
-  }
-
-  .instagram-subscribe {
-    margin: 0;
-    padding: 0;
-  }
+	.instagram-subscribe {
+		margin: 0;
+		padding: 0;
+	}
 }
 
 @media screen and (max-width: 576px) {
-  .main-bg {
-    min-height: 500px;
-    height: 100vh;
-    max-height: 576px;
-  }
+	.main-bg {
+		min-height: 500px;
+		height: 100vh;
+		max-height: 576px;
+	}
 
-  h2 {
-    text-align: center;
-  }
+	h2 {
+		text-align: center;
+	}
 
-  .hero-1 {
-    position: relative;
-    float: left;
-    width: 50% !important;
-    top: 0 !important;
-    left: 0;
-    margin: 0 15px 7px 0;
+	.hero-1 {
+		position: relative;
+		float: left;
+		width: 50% !important;
+		top: 0 !important;
+		left: 0;
+		margin: 0 15px 7px 0;
 
-    &__img {
-      position: relative;
-      top: 0;
-    }
-  }
+		&__img {
+			position: relative;
+			top: 0;
+		}
+	}
 
-  .faq__header {
-    margin-top: 30px;
-  }
+	.faq__header {
+		margin-top: 30px;
+	}
 
-  .step-wrapper:not(:last-child) {
-    margin-right: unset;
-  }
+	.step-wrapper:not(:last-child) {
+		margin-right: unset;
+	}
 
-  .step {
-    width: 250px;
-    height: 250px;
-  }
+	.step {
+		width: 250px;
+		height: 250px;
+	}
 
-  .step__num {
-    width: 30px;
-    height: 50px;
-  }
+	.step__num {
+		width: 30px;
+		height: 50px;
+	}
 
-  .step__text {
-    margin-top: 30px;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 18px;
-  }
+	.step__text {
+		margin-top: 30px;
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 18px;
+	}
 
-  .footer {
-    &-wrapper {
-      text-align: center;
-    }
-  }
+	.footer {
+		&-wrapper {
+			text-align: center;
+		}
+	}
 }

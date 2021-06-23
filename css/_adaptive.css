@@ -24,9 +24,6 @@
 
   .instagram-wrapper {
     background-image: unset;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
     margin-top: 30px;
   }
   .instagram-wrapper__small-spot {
@@ -39,6 +36,7 @@
   .instagram-id {
     margin: 0;
     padding: 0;
+    justify-content: start;
   }
   .instagram-id__icn {
     display: none;

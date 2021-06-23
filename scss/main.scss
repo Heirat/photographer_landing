@@ -504,39 +504,43 @@
 
 .instagram {
 	padding-top: clamp(40px, calc(20px + 6.3vw), 120px);
-}
 
-.instagram-wrapper {
-	position: relative;
-	//right: clamp(-50px, calc(46.2px - 6.0vw), 0px);
-	right: clamp(-10px, calc(-19.2px + 1.2vw), 0px);
-	background-image: url(../img/instagram/big-spot.png);
-	background-repeat: no-repeat;
-	background-size: contain;
-
-	& a {
-		@include font-size($h3-font-sizes);
+	&__title {
+		text-align: start;
 	}
 
-	// box shadow?
+	&-wrapper {
+		position: relative;
+		//right: clamp(-50px, calc(46.2px - 6.0vw), 0px);
+		right: clamp(-10px, calc(-19.2px + 1.2vw), 0px);
+		background-image: url(../img/instagram/big-spot.png);
+		background-repeat: no-repeat;
+		background-size: contain;
 
-	&__small-spot {
-		position: absolute;
-		width: clamp(148px, calc(48.3px + 13vw), 256px);
-		height: clamp(121px, calc(57.3px + 8.3vw), 190px);
-		//right: clamp(-25px, calc(-66.5px + 5.4vw), 20px);
-		right: clamp(10px, calc(-17.7px + 3.6vw), 40px);
-		bottom: clamp(-16px, calc(-172.6px + 15.8vw), 80px);
-		z-index: 0;
-	}
+		& a {
+			@include font-size($h3-font-sizes);
+		}
 
-	&__flower {
-		position: absolute;
-		width: clamp(110px, calc(62.9px + 6.1vw), 161px);
-		height: clamp(110px, calc(62.9px + 6.1vw), 161px);
-		left: clamp(12px, calc(-23.1px + 4.6vw), 50px);
-		bottom: clamp(38px, calc(-10px + 6.3vw), 90px);
-		z-index: 0;
+		// box shadow?
+
+		&__small-spot {
+			position: absolute;
+			width: clamp(148px, calc(48.3px + 13vw), 256px);
+			height: clamp(121px, calc(57.3px + 8.3vw), 190px);
+			//right: clamp(-25px, calc(-66.5px + 5.4vw), 20px);
+			right: clamp(10px, calc(-17.7px + 3.6vw), 40px);
+			bottom: clamp(-16px, calc(-172.6px + 15.8vw), 80px);
+			z-index: 0;
+		}
+
+		&__flower {
+			position: absolute;
+			width: clamp(110px, calc(62.9px + 6.1vw), 161px);
+			height: clamp(110px, calc(62.9px + 6.1vw), 161px);
+			left: clamp(12px, calc(-23.1px + 4.6vw), 50px);
+			bottom: clamp(38px, calc(-10px + 6.3vw), 90px);
+			z-index: 0;
+		}
 	}
 }
 
@@ -578,7 +582,7 @@
 		width: clamp(30px, calc(27.5px + 0.8vw), 40px);
 		height: clamp(30px, calc(27.5px + 0.8vw), 40px);
 		position: absolute;
-		bottom: -32px;
+		bottom: -33px;
 		right: -1vw;
 	}
 }
@@ -589,7 +593,7 @@
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: clamp(10px, calc(8.8px + 0.4vw), 15px);
 	width: fit-content;
-	padding-top: clamp(23px, calc(20.8px + 0.7vw), 32px);
+	padding-top: 39px;
 
 	&__item {
 		box-shadow: 0px 4px 4px rgba(62, 27, 27, 0.5);
