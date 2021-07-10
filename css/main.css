@@ -81,7 +81,7 @@ h2 {
 }
 
 h1 {
-  font-size: 24px;
+  font-size: 30px;
 }
 @media screen and (min-width: 768px) {
   h1 {
@@ -90,12 +90,12 @@ h1 {
 }
 @media screen and (min-width: 992px) {
   h1 {
-    font-size: 50px;
+    font-size: 44px;
   }
 }
 @media screen and (min-width: 1200px) {
   h1 {
-    font-size: 52px;
+    font-size: 48px;
   }
 }
 
@@ -145,17 +145,17 @@ button {
 }
 @media screen and (min-width: 768px) {
   button {
-    font-size: 24px;
+    font-size: 22px;
   }
 }
 @media screen and (min-width: 992px) {
   button {
-    font-size: 26px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 1200px) {
   button {
-    font-size: 30px;
+    font-size: 26px;
   }
 }
 
@@ -179,17 +179,17 @@ button {
 }
 @media screen and (min-width: 768px) {
   .button-primary {
-    font-size: 24px;
+    font-size: 22px;
   }
 }
 @media screen and (min-width: 992px) {
   .button-primary {
-    font-size: 26px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 1200px) {
   .button-primary {
-    font-size: 30px;
+    font-size: 26px;
   }
 }
 .button-primary:hover {
@@ -421,7 +421,7 @@ button {
 }
 .offer-cont__text {
   margin-top: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
 }
 .offer-cont__button {
   padding: clamp(10px, calc(7.5px + 0.8vw), 20px) clamp(20px, calc(15px + 1.6vw), 40px);
@@ -596,8 +596,8 @@ button {
 
 .bg-wrap {
   background: #d9bdbd;
-  padding-top: 30px;
-  padding-bottom: 80px;
+  padding-top: 55px;
+  padding-bottom: 55px;
 }
 
 .contact-form {
