@@ -71,26 +71,26 @@
 	position: absolute;
 }
 
-#menu__toggle:checked ~ .menu__btn > span {
+#menu__toggle:checked~.menu__btn>span {
 	transform: rotate(45deg);
 }
 
-#menu__toggle:checked ~ .menu__btn > span::before {
+#menu__toggle:checked~.menu__btn>span::before {
 	top: 0;
 	transform: rotate(0);
 }
 
-#menu__toggle:checked ~ .menu__btn > span::after {
+#menu__toggle:checked~.menu__btn>span::after {
 	top: 0;
 	transform: rotate(90deg);
 }
 
-#menu__toggle:checked ~ .menu__box {
+#menu__toggle:checked~.menu__box {
 	visibility: visible;
 	right: 0;
 }
 
-#menu__toggle:checked ~ .header-outer.scrolled {
+#menu__toggle:checked~.header-outer.scrolled {
 	background-color: rgba(255, 255, 255, 1) !important;
 }
 
@@ -104,9 +104,9 @@
 	z-index: 80;
 }
 
-.menu__btn > span,
-.menu__btn > span::before,
-.menu__btn > span::after {
+.menu__btn>span,
+.menu__btn>span::before,
+.menu__btn>span::after {
 	display: block;
 	position: absolute;
 
@@ -118,12 +118,12 @@
 	transition-duration: 0.25s;
 }
 
-.menu__btn > span::before {
+.menu__btn>span::before {
 	content: '';
 	top: -8px;
 }
 
-.menu__btn > span::after {
+.menu__btn>span::after {
 	content: '';
 	top: 8px;
 }
@@ -185,21 +185,17 @@
 .gradient-1 {
 	height: 100%;
 	width: 100%;
-	background: linear-gradient(
-		to bottom,
-		rgba(255, 255, 255, 1),
-		transparent 100%
-	);
+	background: linear-gradient(to bottom,
+			rgba(255, 255, 255, 1),
+			transparent 100%);
 }
 
 .gradient-2 {
 	height: 100%;
 	width: 100%;
-	background: linear-gradient(
-		to right,
-		rgba(255, 255, 255, 1),
-		transparent 120%
-	);
+	background: linear-gradient(to right,
+			rgba(255, 255, 255, 1),
+			transparent 120%);
 }
 
 .main-bg {
@@ -223,8 +219,7 @@
 	}
 
 	&__button {
-		padding: clamp(10px, calc(7.5px + 0.8vw), 20px)
-			clamp(20px, calc(15px + 1.6vw), 40px);
+		padding: clamp(10px, calc(7.5px + 0.8vw), 20px) clamp(20px, calc(15px + 1.6vw), 40px);
 	}
 }
 
@@ -364,7 +359,7 @@
 	display: none;
 }
 
-.faq-questions-item.opened > .faq-answer {
+.faq-questions-item.opened>.faq-answer {
 	display: block;
 }
 
@@ -407,6 +402,7 @@
 
 		&__item {
 			display: flex;
+
 			&:not(:last-child) {
 				margin-bottom: 20px;
 			}
@@ -435,7 +431,8 @@
 	padding: 80px 0;
 
 	&__inputs {
-		margin: 57px 0;
+		margin: 87px 0 57px 0;
+		position: relative;
 	}
 
 	&__input-wrapper {
@@ -462,15 +459,92 @@
 	}
 }
 
+.loader {
+	position: absolute;
+	overflow: hidden;
+	font-size: 10px;
+	margin: 18px 0;
+	left: calc(50% - 2em);
+	text-indent: -9999em;
+	width: 4em;
+	height: 4em;
+	border-radius: 50%;
+	background: $accent-color;
+	background: -moz-linear-gradient(left, $accent-color 10%, rgba(101, 171, 248, 0) 42%);
+	background: -webkit-linear-gradient(left, $accent-color 10%, rgba(101, 171, 248, 0) 42%);
+	background: -o-linear-gradient(left, $accent-color 10%, rgba(101, 171, 248, 0) 42%);
+	background: -ms-linear-gradient(left, $accent-color 10%, rgba(101, 171, 248, 0) 42%);
+	background: linear-gradient(to right, $accent-color 10%, rgba(101, 171, 248, 0) 42%);
+
+	-webkit-animation: load3 1.4s infinite linear;
+	animation: load3 1.4s infinite linear;
+	-webkit-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	transform: translateZ(0);
+}
+
+.loader:before {
+	width: 50%;
+	height: 50%;
+	background: $accent-color;
+	border-radius: 100% 0 0 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: '';
+}
+
+.loader:after {
+	background: $bg-light;
+	width: 75%;
+	height: 75%;
+	border-radius: 50%;
+	content: '';
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+@-webkit-keyframes load3 {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes load3 {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
 .form-wrap {
+	position: relative;
 	padding: 50px 0;
 	background: $bg-light;
 	border-radius: 5px;
 	box-shadow: 0px 4px 4px rgba(62, 27, 27, 0.5);
 
 	&__respond {
-		margin-top: 2em;
 		text-align: center;
+		position: absolute;
+		left: 0;
+		margin: 23px auto 0px auto;
+		width: 100%;
 	}
 }
 
@@ -604,8 +678,7 @@
 	& .link::after {
 		content: '';
 		background-image: url(../icn/click-finger.svg);
-		background-size: clamp(30px, calc(27.5px + 0.8vw), 40px)
-			clamp(30px, calc(27.5px + 0.8vw), 40px);
+		background-size: clamp(30px, calc(27.5px + 0.8vw), 40px) clamp(30px, calc(27.5px + 0.8vw), 40px);
 		width: clamp(30px, calc(27.5px + 0.8vw), 40px);
 		height: clamp(30px, calc(27.5px + 0.8vw), 40px);
 		position: absolute;
